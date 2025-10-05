@@ -1,15 +1,12 @@
 {
-  "name": "microblog-backend",
+  "name": "fastdelivery-backend",
   "version": "1.0.0",
-  "description": "Biblioteca Node.js para micro-blogging (Users, Posts, Hashtags) com MongoDB e logging",
-  "main": "src/index.js",
+  "description": "Biblioteca Node.js para serviço de entregas com MongoDB e logs",
+  "main": "src/example.js",
   "scripts": {
     "start": "node src/example.js"
   },
   "dependencies": {
     "mongodb": "^5.8.0"
-  },
-  "engines": {
-    "node": ">=16"
   }
 }
