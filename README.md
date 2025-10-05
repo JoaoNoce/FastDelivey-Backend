@@ -34,8 +34,9 @@ npm start
 
 👨‍💻 Autor
 
-João Gabriel Noce Laureano
-UTFPR - Engenharia da Computação
-📍 Bauru/SP
-📧 joaolaureano@alunos.utfpr.edu.br
+João Gabriel Noce Laureano  
+UTFPR - Engenharia da Computação  
+📍 Bauru/SP  
+📧 joaolaureano@alunos.utfpr.edu.br  
+
 
