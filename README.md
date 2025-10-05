@@ -11,24 +11,6 @@ Permite cadastrar, listar, atualizar e remover entregas.
 - Docker (opcional)
 
 ---
-
-## 📂 Estrutura
-fastdelivery-backend/
-├─ package.json
-├─ README.md
-├─ src/
-│  ├─ database.js
-│  ├─ logger.js
-│  ├─ repositories/
-│  │  ├─ storeRepository.js
-│  │  ├─ orderRepository.js
-│  │  └─ courierRepository.js
-│  └─ example.js
-└─ logs/
-   └─ errors.log
-
----
-
 ## ▶️ Como rodar
 
 ### 1️⃣ Clonar o projeto
@@ -56,3 +38,4 @@ João Gabriel Noce Laureano
 UTFPR - Engenharia da Computação
 📍 Bauru/SP
 📧 joaolaureano@alunos.utfpr.edu.br
+
