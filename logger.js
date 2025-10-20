@@ -1,11 +1,9 @@
-// logger.js
 const fs = require('fs');
 const path = require('path');
 
 class Logger {
-  constructor(dir = 'logs', file = 'errors.log') {
-    this.path = path.join(dir, file);
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+  constructor(file = 'errors.log') {
+    this.path = path.join(process.cwd(), file); // caminho absoluto na raiz
   }
 
   _time() {

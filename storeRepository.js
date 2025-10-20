@@ -49,6 +49,17 @@ class StoreRepository {
   async listAll() {
     return await this.collection.find().toArray();
   }
+
+  async deleteById(id) {
+    try {
+      const { ObjectId } = require('mongodb');
+      const res = await this.collection.deleteOne({ _id: new ObjectId(id) });
+      return res.deletedCount === 1;
+    } catch (e) {
+      await this.logger.error('StoreRepository.deleteById', e);
+      throw e;
+    }
+  }
 }
 
 module.exports = StoreRepository;

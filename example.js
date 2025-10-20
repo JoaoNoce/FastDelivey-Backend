@@ -1,9 +1,9 @@
 // example.js
 const Database = require('./database');
 const Logger = require('./logger');
-const StoreRepository = require('./repositories/storeRepository');
-const OrderRepository = require('./repositories/orderRepository');
-const CourierRepository = require('./repositories/courierRepository');
+const StoreRepository = require('./storeRepository');
+const OrderRepository = require('./orderRepository');
+const CourierRepository = require('./courierRepository');
 
 async function main() {
   const logger = new Logger();

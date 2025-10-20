@@ -62,8 +62,14 @@ class OrderRepository {
     return await this.collection.find({ status }).toArray();
   }
 
-  async delete(orderId) {
-    return await this.collection.deleteOne({ _id: new ObjectId(orderId) });
+  async deleteById(orderId) {
+    try {
+      const res = await this.collection.deleteOne({ _id: new ObjectId(orderId) });
+      return res.deletedCount === 1;
+    } catch (e) {
+      await this.logger.error('OrderRepository.deleteById', e);
+      throw e;
+    }
   }
 }
 
