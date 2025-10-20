@@ -21,13 +21,8 @@ Instalação (local)
     git clone <URL-do-repositório>
 2. Instale dependências:
     npm install
-    # ou
-    yarn install
-3. Configure variáveis de ambiente (veja abaixo).
-4. Rode migrações (se houver):
-    npm run migrate
-5. Inicie a aplicação:
+3. Inicie a aplicação:
     npm run dev
-    # ou
-    yarn dev
+
+
 
