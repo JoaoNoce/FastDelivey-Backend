@@ -1,4 +1,3 @@
-// database.js
 const { MongoClient } = require('mongodb');
 
 class Database {

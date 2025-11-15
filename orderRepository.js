@@ -1,4 +1,3 @@
-// orderRepository.js
 const { ObjectId } = require('mongodb');
 
 class OrderRepository {
@@ -60,6 +59,15 @@ class OrderRepository {
 
   async findByStatus(status) {
     return await this.collection.find({ status }).toArray();
+  }
+
+  async findAll() {
+    try {
+      return await this.collection.find().toArray();
+    } catch (e) {
+      await this.logger.error('OrderRepository.findAll', e);
+      throw e;
+    }
   }
 
   async deleteById(orderId) {

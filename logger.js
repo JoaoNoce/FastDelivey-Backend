@@ -3,7 +3,7 @@ const path = require('path');
 
 class Logger {
   constructor(file = 'errors.log') {
-    this.path = path.join(process.cwd(), file); // caminho absoluto na raiz
+    this.path = path.join(process.cwd(), file);
   }
 
   _time() {

@@ -1,4 +1,3 @@
-// storeRepository.js
 class StoreRepository {
   constructor(db, logger) {
     this.collection = db.collection('stores');

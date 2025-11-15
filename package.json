@@ -1,15 +1,24 @@
 {
-  "name": "microblog-backend",
+  "name": "fastdelivery-backend",
   "version": "1.0.0",
-  "description": "Biblioteca Node.js para micro-blogging (Users, Posts, Hashtags) com MongoDB e logging",
-  "main": "src/index.js",
+  "description": "Sistema de entregas (iFood) - Backend com Express.js, MongoDB e autenticação por sessões",
+  "main": "app.js",
   "scripts": {
-    "start": "node src/example.js"
+    "start": "node app.js",
+    "dev": "node app.js",
+    "test": "node test-api.js",
+    "test-api": "node test-api.js"
   },
   "dependencies": {
-    "mongodb": "^5.8.0"
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mongodb": "^5.9.2"
   },
   "engines": {
     "node": ">=16"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

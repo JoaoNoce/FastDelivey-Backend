@@ -1,4 +1,3 @@
-// courierRepository.js
 class CourierRepository {
   constructor(db, logger) {
     this.collection = db.collection('couriers');
